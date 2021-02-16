@@ -1,0 +1,23 @@
+[
+    {
+        "id": "8de7d2ab-1ffb-45a5-9464-f0b5993afc3e",
+        "name": "Colorado",
+        "releaseYear": 2020,
+        "available": true,
+        "gasAvailable": true
+    },
+    {
+        "id": "5c49660a-34db-4fcf-a801-88484387743e",
+        "name": "Explorer",
+        "releaseYear": 2020,
+        "available": true,
+        "gasAvailable": true
+    },
+    {
+        "id": "9c981d22-9bd9-47a8-850e-f1e02289caf7",
+        "name": "Grand Cherokee",
+        "releaseYear": 2020,
+        "available": true,
+        "gasAvailable": true
+    }
+]
