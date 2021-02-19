@@ -2,7 +2,7 @@
   "name": "aula02-esmodules-internacionalization",
   "type": "module",
   "scripts": {
-    "dev": "npx nodemon --ignore database.json --exec node --experimental-json-modules src/index.js"
+    "dev": "npx nodemon --ignore database.json --exec node --experimental-json-modules --experimental-top-level-await src/index.js"
   },
   "dependencies": {
     "chalk": "^4.1.0",
@@ -12,5 +12,8 @@
   "devDependencies": {
     "@types/node": "^14.14.31",
     "nodemon": "^2.0.7"
+  },
+  "engines": {
+    "node": "14.3"
   }
 }

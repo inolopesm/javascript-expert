@@ -7,7 +7,7 @@ export default class Person {
         this.to = to
     }
 
-    formatted(language) {
+    formatted (language) {
         const mapDate = (date) => {
             const [year, month, day] = date.split('-').map(Number)
             return new Date(year, (month - 1), day)
@@ -28,5 +28,13 @@ export default class Person {
                 .DateTimeFormat(language, { month: 'long', day: '2-digit', year: 'numeric'})
                 .format(mapDate(this.to))
         }
+    }
+
+    static generateInstanceFromString (text) {
+        const EMPTY_SPACE = ' '
+        const [id, vehicles, kmTraveled, from, to] = text.split(EMPTY_SPACE)
+        return new Person({
+            id, kmTraveled, from, to, vehicles: vehicles.split(',')
+        })
     }
 }
